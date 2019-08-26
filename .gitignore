@@ -1,0 +1,10 @@
+*.pth
+checkpoints/
+datasets/
+*.zip
+outputmd/
+runs/
+results/
+*.pyc
+testmd/
+
