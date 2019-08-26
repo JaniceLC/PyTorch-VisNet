@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DeHaze with GAN in PyTorch
 
 We provide a PyTorch implementation for VisNet. 
@@ -88,5 +87,3 @@ Please run `flake8 --ignore E501 .` and `python ./scripts/test_before_push.py` b
 ## Acknowledgments
 Our code is inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 =======
-
->>>>>>> cd8380329075a74ae3cadb83ec81299c485dbed6
