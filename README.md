@@ -1,4 +1,4 @@
-# DeHaze with GAN in PyTorch
+# VisNet PyTorch Implementation
 
 We provide a PyTorch implementation for VisNet. 
 Paper Link: [VisNet: Deep Convolutional Neural Networks for Forecasting Atmospheric Visibility](https://www.mdpi.com/1424-8220/19/6/1343/pdf)
@@ -86,4 +86,3 @@ Please run `flake8 --ignore E501 .` and `python ./scripts/test_before_push.py` b
 
 ## Acknowledgments
 Our code is inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
-=======
