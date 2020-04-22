@@ -33,10 +33,6 @@ cd VisNet_Pytorch
   - For Docker users, we provide the pre-built Docker image and Dockerfile. Please refer to our [Docker](docs/docker.md) page.
 
 ### train/test
-- Download a CycleGAN dataset (e.g. maps):
-```bash
-bash ./datasets/download_cyclegan_dataset.sh maps
-```
 - To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097.
 - Train a model:
 ```bash
@@ -51,7 +47,7 @@ To see more intermediate results, check out `./checkpoints/maps_cyclegan/web/ind
 - Test the model:
 ```bash
 #!./scripts/test_cyclegan.sh
-python test.py --dataroot ./datasets/datasets/FROSI/Fog --name maps_visnet_1 --model cycle_gan
+python test.py --dataroot ./datasets/datasets/FROSI/Fog --name maps_visnet_1 --model visnet
 ```
 - The test results will be saved to a html file here: `./results/checkpoint_name/latest_test/index.html`.
 
@@ -62,8 +58,7 @@ python test.py --dataroot ./datasets/datasets/FROSI/Fog --name maps_visnet_1 --m
 - If you would like to apply a pre-trained model to a collection of input images, please use `--model test` option. See `./scripts/test_single.sh` for how to apply a model to Facade label maps (stored in the directory `facades/testB`).
 
 
-## [Docker](docs/docker.md)
-We provide the pre-built Docker image and Dockerfile that can run this code repo. See [docker](docs/docker.md).
+
 
 ## [Datasets](docs/datasets.md)
 Download pix2pix/CycleGAN datasets and create your own datasets.
@@ -82,7 +77,6 @@ To help users better understand and use our code, we briefly overview the functi
 
 ## Pull Request
 You are always welcome to contribute to this repository by sending a [pull request](https://help.github.com/articles/about-pull-requests/).
-Please run `flake8 --ignore E501 .` and `python ./scripts/test_before_push.py` before you commit the code. Please also update the code structure [overview](docs/overview.md) accordingly if you add or remove files.
 
 ## Acknowledgments
 Our code is inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
